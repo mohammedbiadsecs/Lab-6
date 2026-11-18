@@ -1,0 +1,9 @@
+node_modules/
+.venv/
+models/
+*.mp4
+*.log
+.cache/
+.remotion/
+__pycache__/
+*.pyc
