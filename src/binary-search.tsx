@@ -28,7 +28,7 @@ const ArrayScene: React.FC<{stage: 'setup' | 'sixteen' | 'thirtyEight' | 'found'
   const eliminatedThrough = stage === 'thirtyEight' || stage === 'found' ? 6 : -1;
   const title = stage === 'setup' ? 'Find 56' : stage === 'sixteen' ? 'Middle = 16' : stage === 'thirtyEight' ? 'New middle = 38' : 'Found: 56';
   const subtitle = stage === 'setup' ? 'Search the sorted array' : stage === 'sixteen' ? '56 is larger → discard 2 through 16' : stage === 'thirtyEight' ? '56 is larger → discard 23 and 38' : 'Three comparisons. One answer.';
-  const disappear = interpolate(frame, [42, 68], [1, 0.2], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const disappear = interpolate(frame, [75, 105], [1, 0.2], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return <Shell kicker="Binary search · step by step">
     <div style={{marginTop: 65, fontSize: 75, fontWeight: 800, color: stage === 'found' ? green : '#f4f8ff'}}>{title}</div>
     <div style={{marginTop: 16, fontSize: 34, color: '#b8c8dd'}}>{subtitle}</div>
