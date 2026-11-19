@@ -7,3 +7,5 @@ models/
 .remotion/
 __pycache__/
 *.pyc
+.claude/skills/lab06-collect/
+lab06-upload/
